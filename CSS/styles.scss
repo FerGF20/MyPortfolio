@@ -265,11 +265,17 @@
             .about .about__container p{  
                 margin: 0;   
             }
-            .projects .projects__container .project img{
+            .projects .projects__container{
                 width: 300px;
+                .project img{
+                    width: 300px;
+                }
             }
-            .certs .certs__container .cert img{
+            .certs .certs__container{
                 width: 300px;
+                .cert img{
+                    width: 300px;
+                }
             }
         }
         .menu{
@@ -286,6 +292,7 @@
                 align-items: center;
                 width: 100%;
                 height: 60px;
+                padding: 0 5rem;
                 &::before{
                     content: "";
                     position: absolute;
@@ -333,4 +340,15 @@
             }
         }  
     }      
+}
+
+@media (max-width:490px) {
+    .main{
+        .menu .menu-icon::before{
+            width: 60%;
+        }
+        .menu .menu-icon::after{
+            width: 60%;
+        }
+    }
 }
